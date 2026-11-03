@@ -4,8 +4,8 @@
   "description": "Postmill browser extension for cookie-based platform authentication",
   "license": "AGPL-3.0",
   "scripts": {
-    "build": "rm -rf dist && vite build && cp manifest.json dist/manifest.json && cd dist && zip -r ../extension.zip .",
-    "dev": "rm -rf dist && NODE_ENV=development dotenv -e ../../.env -- vite build --config vite.config.chrome.ts --mode development --watch",
+    "build": "node init && rm -rf dist && vite build && cp manifest.json dist/manifest.json && cd dist && zip -r ../extension.zip .",
+    "dev": "node init && rm -rf dist && NODE_ENV=development dotenv -e ../../.env -- vite build --config vite.config.chrome.ts --mode development --watch",
     "test": "vitest run"
   },
   "type": "module",
