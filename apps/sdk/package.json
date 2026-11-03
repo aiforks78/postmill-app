@@ -1,14 +1,14 @@
 {
   "name": "@postmill-ai/postmill-sdk",
   "version": "2.0.1",
-  "description": "Official Node SDK for Postmill — schedule posts, manage channels, and drive the public API.",
+  "description": "Official Node SDK for Postmill \u2014 schedule posts, manage channels, and drive the public API.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "publishConfig": {
     "access": "public"
   },
   "scripts": {
-    "build": "tsup",
+    "build": "node init && tsup",
     "test": "vitest run",
     "release": "tsup && pnpm publish --access public",
     "release:dry": "tsup && pnpm publish --access public --dry-run --no-git-checks"
